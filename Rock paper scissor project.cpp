@@ -15,7 +15,7 @@ int main()
 
 	while (playagain == 'y' || playagain == 'Y') // will keep playing till player chooses not to
 	{
-		cout << "Enter Rock, Paper, or Scissors ( First letter captial ) \n";
+		cout << "Enter Rock, Paper, Scissors, Quit ( First letter captial ) \n";
 		cin >> choice;
 		 
 		if (choice == "Rock" || choice == "Paper" || choice == "Scissors")
@@ -37,7 +37,11 @@ int main()
 			cin >> playagain;
 			
 		}
-		else
+		else if (choice == "Quit")
+		{
+			return 0;
+		}
+		else 
 		{
 			Menu(choice); // will display if you choose incorrectly 
 		}
