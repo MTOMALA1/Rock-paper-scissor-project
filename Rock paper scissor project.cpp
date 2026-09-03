@@ -1,4 +1,10 @@
-
+ 
+/*
+* Marcos T 9/3/206 Rock Paper Scissors Project.
+*
+* This is rock paper scissors where the player has to type its answer and a bot will ranomly be given an opposing answer to see who wins. 
+* You can play as many times as you like with a tracker keeping score of your wins, losses, draws, and the amount of rounds you played.
+*/ 
 #include <iostream>
 #include <string>
 #include "RPS.h"
