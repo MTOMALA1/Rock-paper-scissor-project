@@ -9,6 +9,7 @@ using namespace std;
 int a = 0; // wins
 int b = 0; //  losses 
 int c = 0; // ties
+int e = 0; // rounds 
 
 
 
@@ -79,6 +80,7 @@ void Round(int player, int bot) // this is how the game is played and after ever
 	{
 		cout << "Tie!\n";
 		c++;
+		e++;
 		
 	}
 	else if (
@@ -89,6 +91,7 @@ void Round(int player, int bot) // this is how the game is played and after ever
 	{
 		cout << "You win!\n";
 		a++;
+		e++;
 		
 		
 	}
@@ -96,16 +99,23 @@ void Round(int player, int bot) // this is how the game is played and after ever
 	{
 		cout << "Bot wins!\n";
 		b++;
+		e++;
 		
 	}
 	cout << "You: " << a << " wins\n";
 	cout << "Bot: " << b << " wins\n";
 	cout << "Ties: " << c << "\n";
+	cout << "Rounds: " << e << "\n";
 }
 
-void Summary(int a, int b, int c) // this is to display EVERYTHING when the game is done  
+void Summary(int a, int b, int c, int e) // this is to display EVERYTHING when the game is done  
 {
 	cout << "GAME SUMMARY \n";
+	if (e == 1) 
+	{
+		cout << "You have played a total of " << e << " round \n";
+	}
+	else cout << "You have played a total of " << e << " rounds \n";	
 	if (a == 1)
 	{
 		cout << "You have won: " << a << " time \n";

@@ -48,7 +48,7 @@ int main()
 
 	}
 	cout << "\n";
-	Summary(a, b, c); // taking wins loses and ties and putting them into a summary 
+	Summary(a, b, c, e); // taking wins loses and ties and putting them into a summary 
 
 	return 0;
 
