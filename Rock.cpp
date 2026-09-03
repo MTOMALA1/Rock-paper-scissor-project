@@ -29,6 +29,10 @@ void Menu(const string& choice) // Menu is displaying what the players choices a
 		cout << "Your choice was Scissors \n";
 		
 	}
+	
+	
+		
+	
 	else
 	{
 		cout << "That's invalid, Try again \n";
